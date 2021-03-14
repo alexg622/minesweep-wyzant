@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minesweeper App"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="flags:"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/flagText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%1$s"
+        android:textSize="25dp" />
+
+    <Switch
+        android:id="@+id/toggleFlag"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Flag" />
+    
+    <us.ait.minesweeper.ui.MinesweeperView
+        android:id="@+id/mineView"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:id="@+id/btnRestart"/>
+
+</LinearLayout>
