@@ -110,6 +110,7 @@ object MinesweeperModel {
     //change the cover state at the field (x, y)
     fun setCoverState(x: Int, y: Int, state: Short) {
         model[x][y] = state
+        covered[x][y] = state
 flagCount = when {
             //when the action is flagging, decrease the number of available flags
             (state == FLAG) -> flagCount  - 1
