@@ -100,8 +100,8 @@ class MinesweeperView (context: Context?, attrs: AttributeSet?) : View(context, 
 
     //draw all of the numbers and objects in the squares
     private fun drawObjects(canvas: Canvas) {
-        for (i in 0 until 4) {
-            for (j in 0 until 4) {
+        for (i in 0 until 5) {
+            for (j in 0 until 5) {
                 drawObject(i, j, canvas)
             }
         }
